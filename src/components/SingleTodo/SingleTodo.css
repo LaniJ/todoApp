@@ -51,7 +51,6 @@
 }
 .task-completed {
   background-color: rgb(244, 241, 244, 0.5);
-  /* opacity: 50%; */
   color: gray;
 }
 
