@@ -6,10 +6,7 @@ const SingleTodo = ({ todo, deleteItem }) => {
   const [ checked, setChecked ] = useState(false);
 
   const handleClick = (todo) => {
-    console.log('todo', todo.checked);
     checked === true ? setChecked(false) : setChecked(true);
-    // toggleChecked(todo);
-    // console.log('todo', checked);
   }
 
   const handleDelete = (id) => {
@@ -18,20 +15,12 @@ const SingleTodo = ({ todo, deleteItem }) => {
 
   // const toggleChecked = (todo) => {
   //   const { id, checked } = todo;
-  //   // console.log('checked val --->>> ', checked);
-  //   // console.log('todo val --->>> ', todo);
-
   //   const updatedTodo = { 
   //     ...todo, 
   //     checked : checked === true ? false : true
   //   };
-  //   // console.log('found -- newTodo', updatedTodo);
-
   //   // const todoIndex = todos.findIndex(element => element.id === id);
-
   //   // todos.splice(todoIndex, 1, updatedTodo)
-
-  //   // console.log('Todos object', todos);
   // }
 
   return ( 

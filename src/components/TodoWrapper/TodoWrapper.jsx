@@ -15,16 +15,11 @@ const TodoWrapper = () => {
  
   const addItem = (item) => {
     const newTodo = { task: item, id: (Math.floor(Math.random() * 1000)), checked: false}
-    // console.log('newTodo', newTodo);
     const modTodos = [ ...todos, newTodo ]
-    // console.log('modTodos', modTodos);
     setTodos(modTodos)
   }
   const deleteItem = (id) => {
     const currentTodos = todos.filter(task => task.id !== id);
-    // console.log('deletedTodoIndex', deletedTodoIndex);
-    // todos.splice(deletedTodoIndex, 1);
-    console.log('in parent-- todos', currentTodos);
     setTodos(currentTodos);
   }
 
