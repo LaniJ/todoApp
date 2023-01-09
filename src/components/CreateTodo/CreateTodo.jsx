@@ -2,12 +2,14 @@ import { useState } from "react";
 import plusIcon from "../../assets/icons/plus-icon.svg";
 import './CreateTodo.css';
 
-const CreateTodo = () => {
+const CreateTodo = ({ addItem }) => {
   const [ todoItem, setTodoItem ] = useState('');
 
   const handleClick = (e) => {
     e.preventDefault();
-    console.log('todoItem', todoItem);
+    const newItem = todoItem.trim();
+    console.log('todoItem', newItem);
+    addItem(newItem);
     setTimeout(() => {
       setTodoItem('');
     }, 1000);

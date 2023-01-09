@@ -1,0 +1,92 @@
+.single-todo {
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  padding: 16px;
+  background-color: #F4F1F4;
+  margin-bottom: 10px;
+  transition: all 0.1s ease-in;
+}
+.single-todo:hover {
+  background-color: #decedeeb;
+}
+.single-todo:hover .delete-btn  {
+  /* display: block; */
+  visibility: visible;
+}
+.todo-info {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+}
+
+.custom_checkbox {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  border: 2px solid darkslategray;
+  border-radius: 50%;
+  margin-right: 24px;
+  transform: scale(1);
+  transition: transform 300ms ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2px;
+  box-sizing: border-box;
+}
+
+    
+/* .custom_checkbox::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 50%;
+  left: 24px;
+  height: 1px;
+  background: red;
+  background: darkslategray;
+  border-color: darkslategray;
+  box-shadow: inset 0 0 5px white;
+
+} */
+
+.checked {
+  height: 13px;
+    font-weight: 12px;
+    border: 1px solid darkslategray;
+    border-radius: 50%;
+    /* display: flex; */
+    background-color: darkslategray;
+    /* /* width: 12px; */
+}
+.custom_checkbox--checked {
+  display: inline-block;
+}
+
+.crossout {
+  text-decoration: line-through;
+  text-decoration-thickness: 1px;
+}
+.task-completed {
+  background-color: #decedeeb;
+}
+/* .todo-info .crossout {
+  bac
+} */
+.delete-btn {
+  background-color: #E54F3C;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 0;
+  visibility: hidden;
+  height: 100%;
+  transition: all 0.1s ease-in;
+}
