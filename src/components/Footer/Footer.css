@@ -1,0 +1,30 @@
+.footer {
+  display: flex;
+  margin-top: 30px;
+  text-align: left;
+  align-items: center;
+}
+p {
+  font-size: 18px;
+  flex-grow: 1;
+}
+.delete-all-btn {
+  border: none;
+  background-color: purple;
+  border-radius: 3px;
+  outline: none;
+  cursor: pointer;
+  padding: 15px;
+  color: #fff;
+}
+
+@media screen and (max-width: 600px) {
+  .footer {
+    display: block;
+    text-align: center;
+  }
+  .delete-all-btn {
+    margin-top: 20px;
+    width: 100%;
+  }
+}

@@ -7,12 +7,12 @@ const CreateTodo = ({ addItem }) => {
 
   const handleClick = (e) => {
     e.preventDefault();
+    if (!todoItem.length) return;
     const newItem = todoItem.trim();
-    console.log('todoItem', newItem);
     addItem(newItem);
     setTimeout(() => {
       setTodoItem('');
-    }, 1000);
+    }, 600);
   }
   return ( 
     <div>

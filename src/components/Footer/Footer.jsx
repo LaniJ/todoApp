@@ -2,9 +2,9 @@ import './Footer.css';
 
 const Footer = ({ length, deleteAll }) => {
   return ( 
-    <div>
-      <p>You have {length} pending tasks left</p>
-      <button onClick={deleteAll}>Clear All</button>
+    <div className='footer'>
+      <p>You have <strong>{length}</strong> pending tasks left</p>
+      <button className='delete-all-btn' onClick={deleteAll}>Clear All</button>
     </div>
    );
 }
