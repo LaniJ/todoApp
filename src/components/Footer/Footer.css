@@ -1,7 +1,9 @@
 .footer {
-  display: flex;
   margin-top: 30px;
   text-align: left;
+}
+.pending-tasks {
+  display: flex;
   align-items: center;
 }
 p {
@@ -19,7 +21,7 @@ p {
 }
 
 @media screen and (max-width: 600px) {
-  .footer {
+  .pending-tasks {
     display: block;
     text-align: center;
   }
