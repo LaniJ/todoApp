@@ -2,11 +2,12 @@ import './SingleTodo.css';
 import deleteIcon from "../../assets/icons/delete-icon.svg";
 import { useState } from 'react';
 
-const SingleTodo = ({ todo, deleteItem }) => {
+const SingleTodo = ({ todo, deleteItem, toggleChecked }) => {
   const [ checked, setChecked ] = useState(false);
 
-  const handleClick = (todo) => {
+  const handleClick = (id) => {
     checked === true ? setChecked(false) : setChecked(true);
+    toggleChecked(id);
   }
 
   const handleDelete = (id) => {
@@ -28,7 +29,7 @@ const SingleTodo = ({ todo, deleteItem }) => {
       <div className='todo-info'>
         <div 
           className={`custom_checkbox`}
-          onClick={() => {handleClick(todo)}}>
+          onClick={() => {handleClick(todo.id)}}>
             <div className={checked ? 'checked' : ''}></div>
         </div>
         <div>
